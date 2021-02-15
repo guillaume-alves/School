@@ -10,7 +10,7 @@ public class Main {
             // Get connection to the database
             Connection myConn = DriverManager.getConnection(url, user, password);
 
-            // Get statement defined
+            // Get statement
             Statement state = myConn.createStatement();
 
             String query = "SELECT professeur.nom, professeur.prenom, matiere.nom FROM ((professeur INNER JOIN matiere_professeur ON matiere_professeur.professeur_id = professeur.idprofesseur)INNER JOIN matiere ON matiere_professeur.matiere_id = matiere.idmatiere)";
