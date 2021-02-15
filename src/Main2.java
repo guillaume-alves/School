@@ -1,5 +1,5 @@
 import java.sql.*;
- 
+
 public class Main2 {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/ecole";
